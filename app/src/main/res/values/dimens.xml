@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="double_activity_margin">32dp</dimen>
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="half_activity_margin">8dp</dimen>
+    <dimen name="quarter_activity_margin">4dp</dimen>
+    <dimen name="regular_text">15sp</dimen>
+    <dimen name="small_text_1">14sp</dimen>
+    <dimen name="small_text_2">13sp</dimen>
+    <dimen name="small_text_3">12sp</dimen>
+    <dimen name="small_text_4">11sp</dimen>
+    <dimen name="small_text_6">9sp</dimen>
+    <dimen name="large_text_15">30sp</dimen>
+    <dimen name="large_text_2">17sp</dimen>
+    <dimen name="one_half_activity_margin">24dp</dimen>
+    <dimen name="three_quarter_activity_margin">12dp</dimen>
+    <dimen name="triple_activity_margin">48dp</dimen>
+    <dimen name="quad_activity_margin">64dp</dimen>
+    <dimen name="deep_corner_radius">20dp</dimen>
+    <dimen name="status_bar_height">25dp</dimen>
+    <dimen name="overlay_offset">-40dp</dimen>
+    <dimen name="menu_image_size">70dp</dimen>
+    <dimen name="large_text_20">35sp</dimen>
+</resources>

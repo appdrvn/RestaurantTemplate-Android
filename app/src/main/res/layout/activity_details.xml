@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinator_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_white_solid"
+        android:elevation="@dimen/double_activity_margin">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/black"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/overlay_offset">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/quad_activity_margin"
+                android:background="@drawable/gradient_white_dark" />
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/quad_activity_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/activity_margin"
+                    android:src="@drawable/ic_back_grey" />
+                <ImageView
+                    android:id="@+id/info"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/activity_margin"
+                    android:src="@drawable/ic_info_grey" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="?attr/actionBarSize"
+                    android:layout_marginTop="@dimen/half_activity_margin"
+                    android:layout_toRightOf="@id/back"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/large_text_2" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title"
+                    android:layout_marginRight="?attr/actionBarSize"
+                    android:layout_marginTop="@dimen/half_activity_margin"
+                    android:layout_toRightOf="@id/back"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:textColor="@color/light_grey"
+                    android:textSize="@dimen/small_text_3" />
+
+                <RatingBar
+                    android:layout_marginBottom="@dimen/three_quarter_activity_margin"
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_below="@id/address"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/half_activity_margin"
+                    android:isIndicator="true"
+                    android:progressDrawable="@drawable/rating_yellow_selector"
+                    android:rating="5" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+</android.support.design.widget.CoordinatorLayout>

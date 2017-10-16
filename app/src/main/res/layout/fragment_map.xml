@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/my_location"
+        android:layout_alignTop="@id/map"
+        android:layout_alignRight="@id/map"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:layout_marginRight="@dimen/activity_margin"
+        android:layout_marginTop="@dimen/double_activity_margin"
+        android:layout_width="@dimen/triple_activity_margin"
+        android:layout_height="@dimen/triple_activity_margin"
+        android:background="@drawable/oval_light_grey_50"
+        android:padding="@dimen/three_quarter_activity_margin"
+        android:src="@drawable/ic_my_location_white" />
+
+</RelativeLayout>

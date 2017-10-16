@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="@dimen/activity_margin"
+    android:elevation="@dimen/quarter_activity_margin"
+    app:contentInsetStart="0dp"
+    android:layout_marginRight="@dimen/activity_margin"
+    android:layout_marginTop="@dimen/activity_margin"
+    android:layout_marginBottom="@dimen/activity_margin"
+    android:background="@drawable/rounded_corner_white_solid"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+
+        <ImageView
+            android:id="@+id/action_bar_left_icon"
+            android:padding="@dimen/activity_margin"
+            android:src="@drawable/ic_menu_grey"
+            style="@style/action_bar_icon" />
+
+        <EditText
+            android:paddingLeft="@dimen/activity_margin"
+            android:paddingRight="@dimen/activity_margin"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/extra_light_grey"
+            android:hint="@string/search_restaurant"
+            android:gravity="left|center_vertical"
+            style="@style/action_bar_title" />
+
+        <ImageView
+            android:id="@+id/action_bar_right_icon"
+            android:padding="@dimen/activity_margin"
+            android:src="@drawable/ic_search_grey"
+            style="@style/action_bar_icon" />
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="@dimen/menu_image_size"
+        android:layout_height="@dimen/menu_image_size"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/activity_margin"
+        android:layout_marginTop="@dimen/half_activity_margin" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:layout_marginRight="@dimen/activity_margin"
+        android:layout_marginTop="@dimen/half_activity_margin"
+        android:layout_toLeftOf="@id/thumbnail"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="right"
+        android:lines="1"
+        android:text="Char Kway Teow"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/small_text_2" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/name"
+        android:layout_alignRight="@id/name"
+        android:layout_below="@id/name"
+        android:layout_marginTop="@dimen/quarter_activity_margin"
+        android:gravity="right"
+        android:lines="1"
+        android:text="RM 22.90"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/small_text_2" />
+
+    <TextView
+        android:id="@+id/ingredient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/name"
+        android:layout_alignRight="@id/name"
+        android:layout_below="@id/price"
+        android:layout_marginTop="@dimen/quarter_activity_margin"
+        android:ellipsize="start"
+        android:gravity="right"
+        android:lines="2"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut risus facilisis, auctor nulla quis, lobortis justo. Donec porta hendrerit nisi non aliquet. Phasellus enim tortor, ultricies vel risus et, tin"
+        android:textColor="@color/extra_light_grey"
+        android:textSize="@dimen/small_text_4" />
+
+    <View
+        android:alpha="0.3"
+        android:background="@color/extra_light_grey"
+        android:layout_below="@id/thumbnail"
+        android:layout_marginTop="@dimen/half_activity_margin"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</RelativeLayout>
