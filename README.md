@@ -4,20 +4,6 @@ Restaurant Directory App Template is based on a restaurant directory app. The ap
 
 The main objective of this template is to assist startups to buy their mobile application faster and easier. 
 
-### Tools and Libraries used
-
-Name | Description | URL
----- | ------------- | --
-Glide | Glide is a library which loads web images, and also provide caching. | https://github.com/bumptech/glide 
-PhotoView | PhotoView is a library which display images, and allow user to zoom and pan | https://github.com/chrisbanes/PhotoView
-Glide Transformations | Glide Transformations is a library which allow image transformation when loading the image with Glide. | https://github.com/wasabeef/glide-transformations 
-Parceler | Parceler is a library which flatten the object and converts back to allow objects being passed via intent extra and bundle argument. | https://github.com/johncarl81/parceler 
-Dexter | Dexter is a library checking use permission for Android OS v5.0 and above | https://github.com/Karumi/Dexter 
-Google-gson | Google-gson is a library which can convert model objects into GSON format. | https://github.com/google/gson
-Paginate |  Paginate is a library which handles pagination for recyclerview | https://github.com/MarkoMilos/Paginate
-Icons8 | Icons8 is a website which provides images resources for icons. | https://icons8.com/
-Android Asset Studio | Android Asset Studio is a website which provides image resources for icons, it also allow users to change the color of the icons, as well as controlling its size and padding. | https://romannurik.github.io/AndroidAssetStudio/icons-generic.html#source.type=clipart&source.clipart=ac_unit&source.space.trim=1&source.space.pad=0&size=32&padding=8&color=rgba(0%2C%200%2C%200%2C%200.54)&name=ic_ac_unit
-
 ## How to start
 This template comes with dummy data in it, if the app need to connect to Web API, then modify loadData() methods to integrate Web API library.
 All list page adapter is accepting ArrayList via setData() for setting data for the first page, add() method for appending data for the following pages.
@@ -226,6 +212,18 @@ RestaurantTemplate
 |---RestaurantTemplate.iml
 |---settings.gradle
 ```
+### Tools and Libraries used
+
+Glide - https://github.com/bumptech/glide 
+PhotoView - https://github.com/chrisbanes/PhotoView
+Glide Transformations - https://github.com/wasabeef/glide-transformations 
+Parceler - https://github.com/johncarl81/parceler 
+Dexter - https://github.com/Karumi/Dexter 
+Google-gson - https://github.com/google/gson
+Paginate - https://github.com/MarkoMilos/Paginate
+Icons8 - https://icons8.com/
+Android Asset Studio - https://romannurik.github.io/AndroidAssetStudio/icons-generic.html#source.type=clipart&source.clipart=ac_unit&source.space.trim=1&source.space.pad=0&size=32&padding=8&color=rgba(0%2C%200%2C%200%2C%200.54)&name=ic_ac_unit
+
 
 ## Useful Links
 
