@@ -2,7 +2,7 @@
 
 Restaurant Directory App Template is based on a restaurant directory app. The app consists of list view, and also map view. List view display the restaurant list in grid format, while map view has the concept of showing the restaurants in an area based on the center of the map. Other than the list and map view, this template consists of details page as well, displaying the restaurant details, and also the menu that are available in this restaurant.
 
-The main objective of this template is to assist startups to buy their mobile application faster and easier. 
+The main objective of this template is to assist startups to build their mobile application faster and easier. 
 
 ## How to start
 This template comes with dummy data in it, if the app need to connect to Web API, then modify loadData() methods to integrate Web API library.
