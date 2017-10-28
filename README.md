@@ -1,3 +1,6 @@
+## [Restaurant Template Android](http://www.appdrvn.com/restaurant-template-android)
+![Restaurant Template Android](https://appdrvn.blob.core.windows.net/a1b84c0f-dac1-4b57-b657-2790410fdc24/0000021_restaurant-template-android.jpeg "Restaurant Template Android")
+
 ## Introduction
 
 Restaurant Directory App Template is based on a restaurant directory app. The app consists of list view, and also map view. List view display the restaurant list in grid format, while map view has the concept of showing the restaurants in an area based on the center of the map. Other than the list and map view, this template consists of details page as well, displaying the restaurant details, and also the menu that are available in this restaurant.
