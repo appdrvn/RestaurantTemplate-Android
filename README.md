@@ -4,6 +4,9 @@ Restaurant Directory App Template is based on a restaurant directory app. The ap
 
 The main objective of this template is to assist startups to build their mobile application faster and easier. 
 
+## Demo
+Prototype: https://marvelapp.com/6jiaa1e
+
 ## How to start
 This template comes with dummy data in it, if the app need to connect to Web API, then modify loadData() methods to integrate Web API library.
 All list page adapter is accepting ArrayList via setData() for setting data for the first page, add() method for appending data for the following pages.
@@ -85,125 +88,8 @@ This model class is for the restaurant. It is the main object in this template.
 ### File Structure
 ```
 RestaurantTemplate
-|---app
-|      |---src
-|      |      |---main
-|      |      |      |---java
-|      |      |      |      |---com/appdrvn/templateone
-|      |      |      |      |      |---activities
-|      |      |      |      |      |       |---AboutActivity.java
-|      |      |      |      |      |       |---DetailsActivity.java
-|      |      |      |      |      |       |---LandingActivity.java
-|      |      |      |      |      |       |---MainActivity.java
-|      |      |      |      |      |       |---MoreInfoActivity.java
-|      |      |      |      |      |       |---ViewFullImageActivity.java
-|      |      |      |      |      |---adapters
-|      |      |      |      |      |       |---AboutReferenceAdapter.java
-|      |      |      |      |      |       |---BannerPagerAdapter.java
-|      |      |      |      |      |       |---MenuAdapter.java
-|      |      |      |      |      |       |---RestaurantAdapter.java
-|      |      |      |      |      |       |---ViewFullImageAdapter.java
-|      |      |      |      |      |---delegates
-|      |      |      |      |      |       |---Constants.java
-|      |      |      |      |      |       |---DialogsDelegates.java
-|      |      |      |      |      |       |---Util.java
-|      |      |      |      |      |---dialogs
-|      |      |      |      |      |       |---RestaurantDialog.java
-|      |      |      |      |      |---fragments
-|      |      |      |      |      |       |---MapFragment.java
-|      |      |      |      |      |       |---RestaurantListFragment.java
-|      |      |      |      |      |       |---RestaurantMenuFragment.java
-|      |      |      |      |      |---models
-|      |      |      |      |      |       |---AboutReference.java
-|      |      |      |      |      |       |---Address.java
-|      |      |      |      |      |       |---Menu.java
-|      |      |      |      |      |       |---Restaurant.java
-|      |      |      |      |      |---widgets
-|      |      |      |      |      |       |---ViewPagerForPhotoView.java
-|      |      |      |---res
-|      |      |      |      |---color
-|      |      |      |      |      |---main_page_toggle_text_color.xml
-|      |      |      |      |---drawable
-|      |      |      |      |      |---custom_seekbar.xml
-|      |      |      |      |      |---custom_seekbar_thumb.xml
-|      |      |      |      |      |---deep_rounded_corner_white_solid.xml
-|      |      |      |      |      |---gradient_white.xml
-|      |      |      |      |      |---gradient_white_dark.xml
-|      |      |      |      |      |---main_page_toggle_bg.xml
-|      |      |      |      |      |---oval_light_grey_50.xml
-|      |      |      |      |      |---oval_white_70.xml
-|      |      |      |      |      |---rating_yellow_selector.xml
-|      |      |      |      |      |---rounded_corner_theme_solid.xml
-|      |      |      |      |      |---rounded_corner_white_solid.xml
-|      |      |      |      |      |---rounded_side_theme_solid.xml
-|      |      |      |      |---drawable-v21
-|      |      |      |      |      |---rounded_corner_white_solid.xml
-|      |      |      |      |---drawable-xxxhdpi
-|      |      |      |      |      |---ic_arrow_up_grey.png
-|      |      |      |      |      |---ic_back_grey.png
-|      |      |      |      |      |---ic_back_white.png
-|      |      |      |      |      |---ic_email.png
-|      |      |      |      |      |---ic_facebook.png
-|      |      |      |      |      |---ic_info_grey.png
-|      |      |      |      |      |---ic_location_black.png
-|      |      |      |      |      |---ic_marker_green.png
-|      |      |      |      |      |---ic_menu_grey.png
-|      |      |      |      |      |---ic_more_white.png
-|      |      |      |      |      |---ic_my_location_white.png
-|      |      |      |      |      |---ic_rating_yellow.png
-|      |      |      |      |      |---ic_rating_yellow_h.png
-|      |      |      |      |      |---ic_rotated_div.png
-|      |      |      |      |      |---ic_search_grey.png
-|      |      |      |      |      |---ic_settings_white.png
-|      |      |      |      |      |---ic_website.png
-|      |      |      |      |      |---img_landing_page.jpg
-|      |      |      |      |      |---img_logo_long.png
-|      |      |      |      |      |---img_placeholder.png
-|      |      |      |      |---layout
-|      |      |      |      |      |---activity_about.xml
-|      |      |      |      |      |---activity_details.xml
-|      |      |      |      |      |---activity_landing.xml
-
-|      |      |      |      |      |---activity_main.xml
-|      |      |      |      |      |---activity_more_info.xml
-|      |      |      |      |      |---activity_view_full.xml
-|      |      |      |      |      |---dialog_restaurant.xml
-|      |      |      |      |      |---fragment_list.xml
-|      |      |      |      |      |---fragment_map.xml
-|      |      |      |      |      |---fragment_menu.xml
-|      |      |      |      |      |---item_about_references.xml
-|      |      |      |      |      |---item_menu_left.xml
-|      |      |      |      |      |---item_menu_right.xml
-|      |      |      |      |      |---item_restaurant.xml
-|      |      |      |      |      |---layout_search_bar.xml
-|      |      |      |      |      |---layout_toolbar.xml
-|      |      |      |      |      |---pager_banner.xml
-|      |      |      |      |      |---pager_details.xml
-|      |      |      |      |---mipmap-hdpi
-|      |      |      |      |      |---ic_launcher.png
-|      |      |      |      |      |---ic_launcher_round.png
-|      |      |      |      |---mipmap-mdpi
-|      |      |      |      |      |---ic_launcher.png
-|      |      |      |      |      |---ic_launcher_round.png
-|      |      |      |      |---mipmap-xhdpi
-|      |      |      |      |      |---ic_launcher.png
-|      |      |      |      |      |---ic_launcher_round.png
-|      |      |      |      |---mipmap-xxhdpi
-|      |      |      |      |      |---ic_launcher.png
-|      |      |      |      |      |---ic_launcher_round.png
-|      |      |      |      |---mipmap-xxxhdpi
-|      |      |      |      |      |---ic_launcher.png
-|      |      |      |      |      |---ic_launcher_round.png
-|      |      |      |      |---values
-|      |      |      |      |      |---arrays.xml
-|      |      |      |      |      |---colors.xml
-|      |      |      |      |      |---dimens.xml
-|      |      |      |      |      |---strings.xml
-|      |      |      |      |      |---styles.xml
-|      |      |      |---AndroidManifest.xml
-|      |      |---app.iml
-|      |      |---build.gradle
-|      |      |---proguard-rules.pro
+|---LICENSE.md
+|---README.md
 |---build.gradle
 |---gradle.properties
 |---gradlew
@@ -211,17 +97,143 @@ RestaurantTemplate
 |---local.properties
 |---RestaurantTemplate.iml
 |---settings.gradle
+|---app
+| |---app.iml
+| |---build.gradle
+| |---proguard-rules.pro
+| |---src
+| | |---main
+| | | |---java
+| | | | |---com/appdrvn/templateone
+| | | | | |---activities
+| | | | | | |---AboutActivity.java
+| | | | | | |---DetailsActivity.java
+| | | | | | |---LandingActivity.java
+| | | | | | |---MainActivity.java
+| | | | | | |---MoreInfoActivity.java
+| | | | | | |---ViewFullImageActivity.java
+| | | | | |---adapters
+| | | | | | |---AboutReferenceAdapter.java
+| | | | | | |---BannerPagerAdapter.java
+| | | | | | |---MenuAdapter.java
+| | | | | | |---RestaurantAdapter.java
+| | | | | | |---ViewFullImageAdapter.java
+| | | | | |---delegates
+| | | | | | |---Constants.java
+| | | | | | |---DialogsDelegates.java
+| | | | | | |---Util.java
+| | | | | |---dialogs
+| | | | | | |---RestaurantDialog.java
+| | | | | |---fragments
+| | | | | | |---MapFragment.java
+| | | | | | |---RestaurantListFragment.java
+| | | | | | |---RestaurantMenuFragment.java
+| | | | | |---models
+| | | | | | |---AboutReference.java
+| | | | | | |---Address.java
+| | | | | | |---Menu.java
+| | | | | | |---Restaurant.java
+| | | | | |---widgets
+| | | | | | |---ViewPagerForPhotoView.java
+| | | |---res
+| | | | |---color
+| | | | | |---main_page_toggle_text_color.xml
+| | | | |---drawable
+| | | | | |---custom_seekbar.xml
+| | | | | |---custom_seekbar_thumb.xml
+| | | | | |---deep_rounded_corner_white_solid.xml
+| | | | | |---gradient_white.xml
+| | | | | |---gradient_white_dark.xml
+| | | | | |---main_page_toggle_bg.xml
+| | | | | |---oval_light_grey_50.xml
+| | | | | |---oval_white_70.xml
+| | | | | |---rating_yellow_selector.xml
+| | | | | |---rounded_corner_theme_solid.xml
+| | | | | |---rounded_corner_white_solid.xml
+| | | | | |---rounded_side_theme_solid.xml
+| | | | |---drawable-v21
+| | | | | |---rounded_corner_white_solid.xml
+| | | | |---drawable-xxxhdpi
+| | | | | |---ic_arrow_up_grey.png
+| | | | | |---ic_back_grey.png
+| | | | | |---ic_back_white.png
+| | | | | |---ic_email.png
+| | | | | |---ic_facebook.png
+| | | | | |---ic_info_grey.png
+| | | | | |---ic_location_black.png
+| | | | | |---ic_marker_green.png
+| | | | | |---ic_menu_grey.png
+| | | | | |---ic_more_white.png
+| | | | | |---ic_my_location_white.png
+| | | | | |---ic_rating_yellow.png
+| | | | | |---ic_rating_yellow_h.png
+| | | | | |---ic_rotated_div.png
+| | | | | |---ic_search_grey.png
+| | | | | |---ic_settings_white.png
+| | | | | |---ic_website.png
+| | | | | |---img_landing_page.jpg
+| | | | | |---img_logo_long.png
+| | | | | |---img_placeholder.png
+| | | | |---layout
+| | | | | |---activity_about.xml
+| | | | | |---activity_details.xml
+| | | | | |---activity_landing.xml
+| | | | | |---activity_main.xml
+| | | | | |---activity_more_info.xml
+| | | | | |---activity_view_full.xml
+| | | | | |---dialog_restaurant.xml
+| | | | | |---fragment_list.xml
+| | | | | |---fragment_map.xml
+| | | | | |---fragment_menu.xml
+| | | | | |---item_about_references.xml
+| | | | | |---item_menu_left.xml
+| | | | | |---item_menu_right.xml
+| | | | | |---item_restaurant.xml
+| | | | | |---layout_search_bar.xml
+| | | | | |---layout_toolbar.xml
+| | | | | |---pager_banner.xml
+| | | | | |---pager_details.xml
+| | | | |---mipmap-hdpi
+| | | | | |---ic_launcher.png
+| | | | | |---ic_launcher_round.png
+| | | | |---mipmap-mdpi
+| | | | | |---ic_launcher.png
+| | | | | |---ic_launcher_round.png
+| | | | |---mipmap-xhdpi
+| | | | | |---ic_launcher.png
+| | | | | |---ic_launcher_round.png
+| | | | |---mipmap-xxhdpi
+| | | | | |---ic_launcher.png
+| | | | | |---ic_launcher_round.png
+| | | | |---mipmap-xxxhdpi
+| | | | | |---ic_launcher.png
+| | | | | |---ic_launcher_round.png
+| | | | |---values
+| | | | | |---arrays.xml
+| | | | | |---colors.xml
+| | | | | |---dimens.xml
+| | | | | |---strings.xml
+| | | | | |---styles.xml
+| | | |---AndroidManifest.xml
 ```
 ### Tools and Libraries used
 
 Glide - https://github.com/bumptech/glide 
+
 PhotoView - https://github.com/chrisbanes/PhotoView
-Glide Transformations - https://github.com/wasabeef/glide-transformations 
-Parceler - https://github.com/johncarl81/parceler 
-Dexter - https://github.com/Karumi/Dexter 
+
+Glide Transformations - https://github.com/wasabeef/glide-transformations
+
+Parceler - https://github.com/johncarl81/parceler
+
+Dexter - https://github.com/Karumi/Dexter
+
 Google-gson - https://github.com/google/gson
+
 Paginate - https://github.com/MarkoMilos/Paginate
+
 Icons8 - https://icons8.com/
+
 Android Asset Studio - https://romannurik.github.io/AndroidAssetStudio/icons-generic.html#source.type=clipart&source.clipart=ac_unit&source.space.trim=1&source.space.pad=0&size=32&padding=8&color=rgba(0%2C%200%2C%200%2C%200.54)&name=ic_ac_unit
 
 
@@ -229,7 +241,7 @@ Android Asset Studio - https://romannurik.github.io/AndroidAssetStudio/icons-gen
 
 Appdrvn official website - http://www.appdrvn.com/ 
 
-Appdrvn official facebook page - https://www.facebook.com/Appdrvn/ 
+Appdrvn official facebook page - https://www.facebook.com/appdrvn/ 
 
 Appdrvn email address - hello@appdrvn.com
 
