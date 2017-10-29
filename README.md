@@ -1,5 +1,5 @@
 ## [Restaurant Template Android](http://www.appdrvn.com/restaurant-template-android)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Restaurant Template Android](https://appdrvn.blob.core.windows.net/a1b84c0f-dac1-4b57-b657-2790410fdc24/0000025_restaurant-template-android.jpeg "Restaurant Template Android") 
+![Restaurant Template Android](https://appdrvn.blob.core.windows.net/a1b84c0f-dac1-4b57-b657-2790410fdc24/0000025_restaurant-template-android.jpeg?v=1 "Restaurant Template Android") 
 
 ## Introduction
 
