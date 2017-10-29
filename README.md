@@ -221,23 +221,16 @@ RestaurantTemplate
 ```
 ### Tools and Libraries used
 
-Glide - https://github.com/bumptech/glide 
-
-PhotoView - https://github.com/chrisbanes/PhotoView
-
-Glide Transformations - https://github.com/wasabeef/glide-transformations
-
-Parceler - https://github.com/johncarl81/parceler
-
-Dexter - https://github.com/Karumi/Dexter
-
-Google-gson - https://github.com/google/gson
-
-Paginate - https://github.com/MarkoMilos/Paginate
-
-Icons8 - https://icons8.com/
-
-Android Asset Studio - https://romannurik.github.io/AndroidAssetStudio/icons-generic.html#source.type=clipart&source.clipart=ac_unit&source.space.trim=1&source.space.pad=0&size=32&padding=8&color=rgba(0%2C%200%2C%200%2C%200.54)&name=ic_ac_unit
+1. Glide - https://github.com/bumptech/glide 
+2. PhotoView - https://github.com/chrisbanes/PhotoView
+3. Glide Transformations - https://github.com/wasabeef/glide-transformations
+4. Parceler - https://github.com/johncarl81/parceler
+5. Dexter - https://github.com/Karumi/Dexter
+6. Google-gson - https://github.com/google/gson
+7. Paginate - https://github.com/MarkoMilos/Paginate
+8. Unsplash - https://unsplash.com/
+9. Icons8 - https://icons8.com/
+10. Android Asset Studio - https://romannurik.github.io/AndroidAssetStudio/icons-generic.html#source.type=clipart&source.clipart=ac_unit&source.space.trim=1&source.space.pad=0&size=32&padding=8&color=rgba(0%2C%200%2C%200%2C%200.54)&name=ic_ac_unit
 
 
 ## Useful Links
